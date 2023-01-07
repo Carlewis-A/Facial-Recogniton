@@ -1,13 +1,8 @@
-# Name: Carlewis Chambang Akana
-# Department: Computer engineering
-# Subject: Artificial Intelligence
 
 import cv2
 # import sys
 
 # Get user supplied values
-# imagePath = sys.argv[0]
-# imagePath = "C:/Users/Geradine/3D Objects/Programming/python/face_detection/gig-ekonomisi.jpeg"
 imagePath = "gig-ekonomisi.jpeg"
 cascPath = "haarcascade_frontalface_default.xml"
 
@@ -24,7 +19,6 @@ faces = faceCascade.detectMultiScale(
     scaleFactor=2.1,
     minNeighbors=5,
     minSize=(30, 30),
-    # flags = cv2.cv.CV_HAAR_SCALE_IMAGE
     flags=cv2.CASCADE_SCALE_IMAGE
 )
 
